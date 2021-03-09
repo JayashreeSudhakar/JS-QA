@@ -90,17 +90,11 @@ driver.switchTo().window(listHandles1.get(1));
 String secondTitle1 = driver.getTitle();
 System.out.println(secondTitle1);
 Thread.sleep(3000);
-
-
 driver.findElement(By.name("id")).sendKeys("10087");
 driver.findElement(By.xpath("//*[@id=\"ext-gen114\"]")).click();
 Thread.sleep(3000);
 driver.findElement(By.linkText("Sow65")).click();
 driver.switchTo().window(firstWindowHandle);
-
-
-
-
 driver.findElement(By.linkText("Merge")).click();
 Alert alert = driver.switchTo().alert();
 alert.accept();  
